@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 
-namespace IHM_WinUI
+namespace Formularios
 {
     public partial class frmMenu : Form
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace IHM_WinUI
+namespace Formularios
 {
     public partial class frmGerarArquivo : Form
     {

@@ -1,6 +1,6 @@
-﻿namespace IHM_WinUI
+﻿namespace Formularios
 {
-    partial class frmCadastroCliente
+    partial class frmCadCategoria
     {
         /// <summary>
         /// Required designer variable.
@@ -31,21 +31,17 @@
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
-            // 
-            this.tabControl1.Size = new System.Drawing.Size(603, 315);
-            // 
             // tabPage2
             // 
-            this.tabPage2.Size = new System.Drawing.Size(595, 289);
+            this.tabPage2.Size = new System.Drawing.Size(411, 224);
             // 
-            // frmCadastroCliente
+            // frmCadCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 410);
-            this.Name = "frmCadastroCliente";
-            this.Text = "frmCadastroCliente";
+            this.ClientSize = new System.Drawing.Size(443, 318);
+            this.Name = "frmCadCategoria";
+            this.Text = "frmCadCategoria";
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

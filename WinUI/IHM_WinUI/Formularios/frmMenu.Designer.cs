@@ -1,4 +1,4 @@
-﻿namespace IHM_WinUI
+﻿namespace Formularios
 {
     partial class frmMenu
     {

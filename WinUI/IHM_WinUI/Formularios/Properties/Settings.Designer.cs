@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IHM_WinUI.Properties
+namespace Formularios.Properties
 {
 
 

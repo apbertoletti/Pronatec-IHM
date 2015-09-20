@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace IHM_WinUI
+namespace Formularios
 {
     //AULA 2: immplementação de herança visual para padronização das telas
     public partial class frmCadCategoria : frmBase

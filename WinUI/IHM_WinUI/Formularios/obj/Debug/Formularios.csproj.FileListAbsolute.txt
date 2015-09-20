@@ -1,0 +1,16 @@
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Formularios.exe.config
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Formularios.exe
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Formularios.pdb
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\MeusControles.dll
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\MeusControles.pdb
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.csprojResolveAssemblyReference.cache
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmBase.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmCadastroCliente.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmCadastroProduto.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmCadCategoria.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmGerarArquivo.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmMenu.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.Properties.Resources.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.csproj.GenerateResource.Cache
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.exe
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.pdb

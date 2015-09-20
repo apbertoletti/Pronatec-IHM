@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IHM_WinUI")]
+[assembly: AssemblyTitle("Formularios")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("IHM_WinUI")]
+[assembly: AssemblyProduct("Formularios")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5204ff4b-840c-49fc-afe6-703a2b9af129")]
+[assembly: Guid("26605998-fcc6-4660-baa9-5b70c260eab2")]
 
 // Version information for an assembly consists of the following four values:
 //
