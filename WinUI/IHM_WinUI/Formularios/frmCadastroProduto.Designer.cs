@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,23 +44,23 @@
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.txtValor);
+            this.tabPage2.Controls.Add(this.txtDescricao);
             this.tabPage2.Size = new System.Drawing.Size(411, 224);
             // 
-            // textBox1
+            // txtDescricao
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtDescricao.Location = new System.Drawing.Point(6, 33);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(263, 20);
+            this.txtDescricao.TabIndex = 0;
             // 
-            // textBox2
+            // txtValor
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 80);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtValor.Location = new System.Drawing.Point(6, 80);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(118, 20);
+            this.txtValor.TabIndex = 1;
             // 
             // label1
             // 
@@ -112,8 +112,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.TextBox txtDescricao;
         private MeusControles.MeuBotao meuBotao2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
