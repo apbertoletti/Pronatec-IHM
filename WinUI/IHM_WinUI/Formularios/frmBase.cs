@@ -38,19 +38,22 @@ namespace Formularios
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            //AULA 6: immplementada a janela de diálogo padrão do Windows
+            //AULA 6: immplementada a janela de diálogo padrão do Windows 
             DialogResult resposta = MessageBox.Show("Confirma a gravação deste registro?", "Gravação",
                 MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
             //AULA 6: Tratamento da resposta dada pelo usuário
             if (resposta == DialogResult.Yes)
             {
-                //AULA 7: Tratamento de erros
+                //AULA 7: Tratamento de erros 
                 try
                 {
-                    SalvaRegistroBD();
-                    tabControl1.SelectedTab = tabPage1;
-                    MessageBox.Show("Registro salvo com sucesso!");
+                    // AULA 8: Tratamento de erros 
+                    if (SalvaRegistroBD())
+                    {
+                        tabControl1.SelectedTab = tabPage1;
+                        MessageBox.Show("Registro salvo com sucesso!");
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -73,17 +76,13 @@ namespace Formularios
         }
 
 
-        public void SalvaRegistroBD()
+        protected virtual bool SalvaRegistroBD()
         {
-            //Cria a conexao com o BD
+            //AULA 7: Tratamento de erros            
+            //Simula um erro que possa ter acontecido no meio da gravação (comentado na Aula 8)
+            //throw new Exception("A estrutura da tabela cliente está desatualizada");         
 
-            //Acessa a tabela necessaria
-
-            throw new Exception("A estrutura da tabela cliente está desatualizada");
-
-            //Insere o registro na tabela
-
-            //Salva tudo
+            return true;
         }
     }
 }

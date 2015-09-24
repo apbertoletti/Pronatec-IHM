@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.meuBotao2 = new MeusControles.MeuBotao();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage2
@@ -61,6 +64,7 @@
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(118, 20);
             this.txtValor.TabIndex = 1;
+            this.txtValor.Validating += new System.ComponentModel.CancelEventHandler(this.txtValor_Validating);
             // 
             // label1
             // 
@@ -96,6 +100,10 @@
             this.meuBotao2.Size = new System.Drawing.Size(335, 36);
             this.meuBotao2.TabIndex = 6;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -103,9 +111,11 @@
             this.ClientSize = new System.Drawing.Size(447, 326);
             this.Name = "frmCadastroProduto";
             this.Text = "frmCadastroProduto";
+            this.Load += new System.EventHandler(this.frmCadastroProduto_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,5 +128,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
