@@ -61,6 +61,8 @@ namespace Formularios
                 errorProvider1.Clear(); //Limpa o erro do controle (txtValor), caso esteja válido
         }
 
+        //AULA 8: Usa o evento Load do formulario para setar as propriedades iniciais dos controles, 
+        // logo na abertura do mesmo.
         private void frmCadastroProduto_Load(object sender, EventArgs e)
         {
             //AULA 8: Seta o tamanhao máximo do controle via propriedade MaxLength
