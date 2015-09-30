@@ -56,5 +56,11 @@ namespace Formularios
             frmGerarArquivo f = new frmGerarArquivo();
             f.ShowDialog();
         }
+
+        private void alterarSenhaDeAcessoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMudaSenha f = new frmMudaSenha();
+            f.ShowDialog();
+        }
     }
 }

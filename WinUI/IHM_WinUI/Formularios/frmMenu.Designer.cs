@@ -33,9 +33,10 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.utilitariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gerarArquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.alterarSenhaDeAcessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +82,22 @@
             this.fornecedoresToolStripMenuItem.Text = "Categorias de produto";
             this.fornecedoresToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
+            // utilitariosToolStripMenuItem
+            // 
+            this.utilitariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gerarArquivoToolStripMenuItem,
+            this.alterarSenhaDeAcessoToolStripMenuItem});
+            this.utilitariosToolStripMenuItem.Name = "utilitariosToolStripMenuItem";
+            this.utilitariosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.utilitariosToolStripMenuItem.Text = "Utilitarios";
+            // 
+            // gerarArquivoToolStripMenuItem
+            // 
+            this.gerarArquivoToolStripMenuItem.Name = "gerarArquivoToolStripMenuItem";
+            this.gerarArquivoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.gerarArquivoToolStripMenuItem.Text = "Gerar arquivo";
+            this.gerarArquivoToolStripMenuItem.Click += new System.EventHandler(this.gerarArquivoToolStripMenuItem_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(69, 92);
@@ -91,20 +108,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // utilitariosToolStripMenuItem
+            // alterarSenhaDeAcessoToolStripMenuItem
             // 
-            this.utilitariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gerarArquivoToolStripMenuItem});
-            this.utilitariosToolStripMenuItem.Name = "utilitariosToolStripMenuItem";
-            this.utilitariosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.utilitariosToolStripMenuItem.Text = "Utilitarios";
-            // 
-            // gerarArquivoToolStripMenuItem
-            // 
-            this.gerarArquivoToolStripMenuItem.Name = "gerarArquivoToolStripMenuItem";
-            this.gerarArquivoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.gerarArquivoToolStripMenuItem.Text = "Gerar arquivo";
-            this.gerarArquivoToolStripMenuItem.Click += new System.EventHandler(this.gerarArquivoToolStripMenuItem_Click);
+            this.alterarSenhaDeAcessoToolStripMenuItem.Name = "alterarSenhaDeAcessoToolStripMenuItem";
+            this.alterarSenhaDeAcessoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.alterarSenhaDeAcessoToolStripMenuItem.Text = "Alterar senha de acesso";
+            this.alterarSenhaDeAcessoToolStripMenuItem.Click += new System.EventHandler(this.alterarSenhaDeAcessoToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -133,5 +142,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem utilitariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gerarArquivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarSenhaDeAcessoToolStripMenuItem;
     }
 }
