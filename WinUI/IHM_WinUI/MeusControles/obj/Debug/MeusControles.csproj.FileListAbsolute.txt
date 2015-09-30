@@ -4,3 +4,6 @@ D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\Wi
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\MeusControles\obj\Debug\MeusControles.csproj.GenerateResource.Cache
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\MeusControles\obj\Debug\MeusControles.dll
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\MeusControles\obj\Debug\MeusControles.pdb
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\MeusControles\bin\Debug\System.Net.Http.dll
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\MeusControles\bin\Debug\System.Net.Http.xml
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\MeusControles\obj\Debug\MeusControles.csprojResolveAssemblyReference.cache
