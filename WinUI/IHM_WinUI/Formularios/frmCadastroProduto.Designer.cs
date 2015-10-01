@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.txtValor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.meuBotao2 = new MeusControles.MeuBotao();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtValor = new System.Windows.Forms.MaskedTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -43,11 +43,11 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.txtValor);
             this.tabPage2.Controls.Add(this.meuBotao2);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.txtValor);
             this.tabPage2.Controls.Add(this.txtDescricao);
             this.tabPage2.Size = new System.Drawing.Size(411, 224);
             // 
@@ -57,14 +57,6 @@
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(263, 20);
             this.txtDescricao.TabIndex = 0;
-            // 
-            // txtValor
-            // 
-            this.txtValor.Location = new System.Drawing.Point(6, 80);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(118, 20);
-            this.txtValor.TabIndex = 1;
-            this.txtValor.Validating += new System.ComponentModel.CancelEventHandler(this.txtValor_Validating);
             // 
             // label1
             // 
@@ -104,6 +96,15 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(9, 80);
+            this.txtValor.Mask = "#####.99";
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 7;
+            this.txtValor.Validating += new System.ComponentModel.CancelEventHandler(this.txtValor_Validating);
+            // 
             // frmCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,12 +123,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.TextBox txtDescricao;
         private MeusControles.MeuBotao meuBotao2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.MaskedTextBox txtValor;
     }
 }
