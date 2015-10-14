@@ -52,7 +52,6 @@
             // 
             // lstSelecionados
             // 
-            this.lstSelecionados.AllowDrop = true;
             this.lstSelecionados.FormattingEnabled = true;
             this.lstSelecionados.Location = new System.Drawing.Point(268, 94);
             this.lstSelecionados.Name = "lstSelecionados";
