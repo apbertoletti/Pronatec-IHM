@@ -78,7 +78,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(268, 277);
+            this.btnEnviar.Location = new System.Drawing.Point(268, 270);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(99, 53);
             this.btnEnviar.TabIndex = 5;
@@ -88,7 +88,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(373, 277);
+            this.btnCancelar.Location = new System.Drawing.Point(373, 270);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(99, 53);
             this.btnCancelar.TabIndex = 6;
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 347);
+            this.ClientSize = new System.Drawing.Size(492, 345);
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.panel1);

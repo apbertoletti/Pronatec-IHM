@@ -77,7 +77,18 @@ namespace Formularios
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
+            //Captura o indice do elemento marcado no ListBox dos clientes selecionados
+            int indiceClienteMarcado = lstSelecionados.SelectedIndex;
 
+            //Verifica se algum item está marcado na lista dos clientes selecionados
+            if (indiceClienteMarcado != -1)
+            {
+                //Adiconar o cliente selecionado marcado na lista dos clientes disponíveis
+                lstDisponiveis.Items.Add(lstSelecionados.Items[indiceClienteMarcado]);
+
+                //Remove o cliente marcado da lista dos clientes selecionados
+                lstSelecionados.Items.RemoveAt(indiceClienteMarcado);
+            }
         }
     }
 }
