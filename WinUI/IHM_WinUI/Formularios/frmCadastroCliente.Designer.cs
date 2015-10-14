@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCliente));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -40,17 +41,32 @@
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pcbFoto = new System.Windows.Forms.PictureBox();
+            this.btnCarregarFoto = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Size = new System.Drawing.Size(603, 315);
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Size = new System.Drawing.Size(594, 341);
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnCarregarFoto);
+            this.tabPage2.Controls.Add(this.pcbFoto);
+            this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.mskCPF);
@@ -61,7 +77,12 @@
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.txtNome);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Size = new System.Drawing.Size(595, 289);
+            this.tabPage2.Size = new System.Drawing.Size(586, 315);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dataGridView2);
+            this.tabPage1.Size = new System.Drawing.Size(586, 315);
             // 
             // label1
             // 
@@ -153,18 +174,73 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(155, 167);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Foto:";
+            // 
+            // pcbFoto
+            // 
+            this.pcbFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbFoto.Location = new System.Drawing.Point(158, 183);
+            this.pcbFoto.Name = "pcbFoto";
+            this.pcbFoto.Size = new System.Drawing.Size(104, 100);
+            this.pcbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbFoto.TabIndex = 16;
+            this.pcbFoto.TabStop = false;
+            // 
+            // btnCarregarFoto
+            // 
+            this.btnCarregarFoto.Location = new System.Drawing.Point(268, 260);
+            this.btnCarregarFoto.Name = "btnCarregarFoto";
+            this.btnCarregarFoto.Size = new System.Drawing.Size(93, 23);
+            this.btnCarregarFoto.TabIndex = 17;
+            this.btnCarregarFoto.Text = "Carregar foto";
+            this.btnCarregarFoto.UseVisualStyleBackColor = true;
+            this.btnCarregarFoto.Click += new System.EventHandler(this.btnCarregarFoto_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(504, 261);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(580, 309);
+            this.dataGridView2.TabIndex = 0;
+            // 
             // frmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 410);
+            this.ClientSize = new System.Drawing.Size(615, 402);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(34, 52);
             this.Name = "frmCadastroCliente";
-            this.Text = "frmCadastroCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro de";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +259,10 @@
         private System.Windows.Forms.MaskedTextBox mskCPF;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCarregarFoto;
+        private System.Windows.Forms.PictureBox pcbFoto;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

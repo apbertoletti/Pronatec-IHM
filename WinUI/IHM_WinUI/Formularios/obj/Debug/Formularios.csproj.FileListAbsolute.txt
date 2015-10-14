@@ -10,10 +10,8 @@ D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\Wi
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmCadCategoria.resources
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmGerarArquivo.resources
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmMenu.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmMudaSenha.resources
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.Properties.Resources.resources
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.csproj.GenerateResource.Cache
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.exe
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.pdb
-D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmMudaSenha.resources
-D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\System.Net.Http.dll
-D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\System.Net.Http.xml

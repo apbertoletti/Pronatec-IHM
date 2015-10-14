@@ -84,7 +84,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(352, 224);
+            this.tabPage2.Size = new System.Drawing.Size(411, 224);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ficha";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -143,12 +143,12 @@
 
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.TabPage tabPage1;
         public System.Windows.Forms.TabControl tabControl1;
         public System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Button btnCancelar;
+        protected System.Windows.Forms.TabPage tabPage1;
     }
 }
 

@@ -19,17 +19,38 @@ namespace Formularios
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MostraFormCliente();
+        }
+
+        //AULA 10: Foi criado uma método único para exibir form, o qual será chamado por dois lugares diferentes. 
+        //Esta é uma boa prática para se fazer reaproveitamento de código
+        private void MostraFormCliente()
+        {
             frmCadastroCliente fCliente = new frmCadastroCliente();
             fCliente.ShowDialog();
         }
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MostraFormProduto();
+        }
+
+        //AULA 10: Foi criado uma método único para exibir form, o qual será chamado por dois lugares diferentes. 
+        //Esta é uma boa prática para se fazer reaproveitamento de código
+        private void MostraFormProduto()
+        {
             frmCadastroProduto fProduto = new frmCadastroProduto();
             fProduto.ShowDialog();
         }
 
         private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MostraFormCategoria();
+        }
+
+        //AULA 10: Foi criado uma método único para exibir form, o qual será chamado por dois lugares diferentes. 
+        //Esta é uma boa prática para se fazer reaproveitamento de código
+        private void MostraFormCategoria()
         {
             frmCadCategoria fFornecedor = new frmCadCategoria();
             fFornecedor.ShowDialog();
@@ -53,14 +74,71 @@ namespace Formularios
 
         private void gerarArquivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MostraGeraArquivo();
+        }
+
+        //AULA 10: Foi criado uma método único para exibir form, o qual será chamado por dois lugares diferentes. 
+        //Esta é uma boa prática para se fazer reaproveitamento de código
+        private void MostraGeraArquivo()
+        {
             frmGerarArquivo f = new frmGerarArquivo();
             f.ShowDialog();
         }
 
         private void alterarSenhaDeAcessoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MostraMudaSenha();
+        }
+
+        //AULA 10: Foi criado uma método único para exibir form, o qual será chamado por dois lugares diferentes. 
+        //Esta é uma boa prática para se fazer reaproveitamento de código
+        private void MostraMudaSenha()
+        {
             frmMudaSenha f = new frmMudaSenha();
             f.ShowDialog();
+        }
+
+        private void tsbCliente_Click(object sender, EventArgs e)
+        {
+            MostraFormCliente();
+        }
+
+        private void tsbProduto_Click(object sender, EventArgs e)
+        {
+            MostraFormProduto();        
+        }
+
+        private void tsbCategoriaProduto_Click(object sender, EventArgs e)
+        {
+            MostraFormCategoria();
+        }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MostraFornecedor();
+        }
+
+        //AULA 10: Foi criado uma método único para exibir form, o qual será chamado por dois lugares diferentes. 
+        //Esta é uma boa prática para se fazer reaproveitamento de código
+        private void MostraFornecedor()
+        {
+            frmCadFornecedor f = new frmCadFornecedor();
+            f.ShowDialog();
+        }
+
+        private void tsbFornecedor_Click(object sender, EventArgs e)
+        {
+            MostraFornecedor();
+        }
+
+        private void tsbGerarArquivo_Click(object sender, EventArgs e)
+        {
+            MostraGeraArquivo();
+        }
+
+        private void tsbAlterarSenha_Click(object sender, EventArgs e)
+        {
+            MostraMudaSenha();
         }
     }
 }

@@ -42,7 +42,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -70,6 +69,12 @@
     </Compile>
     <Compile Include="frmCadCategoria.Designer.cs">
       <DependentUpon>frmCadCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadFornecedor.Designer.cs">
+      <DependentUpon>frmCadFornecedor.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGerarArquivo.cs">
       <SubType>Form</SubType>
@@ -140,6 +145,24 @@
       <Project>{8c66a947-4acb-4824-b777-79ba4472502d}</Project>
       <Name>MeusControles</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1444262714_unlock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1444262800_folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1444259796_free-17.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1444260332_Label.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1444261182_category.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1444261255_suppliers.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
