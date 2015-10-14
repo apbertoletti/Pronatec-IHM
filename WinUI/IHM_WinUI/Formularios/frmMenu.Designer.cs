@@ -39,6 +39,7 @@
             this.utilitariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gerarArquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarSenhaDeAcessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enviarMalaDiretaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -49,6 +50,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbGerarArquivo = new System.Windows.Forms.ToolStripButton();
             this.tsbAlterarSenha = new System.Windows.Forms.ToolStripButton();
+            this.tsbMalaDireta = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -81,7 +83,7 @@
             // 
             this.clientesToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444259796_free_17;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(208, 38);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
@@ -89,7 +91,7 @@
             // 
             this.produtosToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444260332_Label;
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(208, 38);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
@@ -97,7 +99,7 @@
             // 
             this.fornecedoresToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444261182_category;
             this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(208, 38);
+            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.fornecedoresToolStripMenuItem.Text = "Categorias de produto";
             this.fornecedoresToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
@@ -105,7 +107,7 @@
             // 
             this.fornecedorToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444261255_suppliers;
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(208, 38);
+            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
             this.fornecedorToolStripMenuItem.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
             // 
@@ -113,7 +115,8 @@
             // 
             this.utilitariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gerarArquivoToolStripMenuItem,
-            this.alterarSenhaDeAcessoToolStripMenuItem});
+            this.alterarSenhaDeAcessoToolStripMenuItem,
+            this.enviarMalaDiretaToolStripMenuItem});
             this.utilitariosToolStripMenuItem.Name = "utilitariosToolStripMenuItem";
             this.utilitariosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.utilitariosToolStripMenuItem.Text = "Utilitarios";
@@ -133,6 +136,14 @@
             this.alterarSenhaDeAcessoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.alterarSenhaDeAcessoToolStripMenuItem.Text = "Alterar senha de acesso";
             this.alterarSenhaDeAcessoToolStripMenuItem.Click += new System.EventHandler(this.alterarSenhaDeAcessoToolStripMenuItem_Click);
+            // 
+            // enviarMalaDiretaToolStripMenuItem
+            // 
+            this.enviarMalaDiretaToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444871677_Email;
+            this.enviarMalaDiretaToolStripMenuItem.Name = "enviarMalaDiretaToolStripMenuItem";
+            this.enviarMalaDiretaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.enviarMalaDiretaToolStripMenuItem.Text = "Enviar mala direta";
+            this.enviarMalaDiretaToolStripMenuItem.Click += new System.EventHandler(this.enviarMalaDiretaToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -161,6 +172,7 @@
             this.toolStripSeparator1,
             this.tsbGerarArquivo,
             this.tsbAlterarSenha,
+            this.tsbMalaDireta,
             this.toolStripSeparator2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
@@ -236,6 +248,17 @@
             this.tsbAlterarSenha.ToolTipText = "Trocar senha de acesso";
             this.tsbAlterarSenha.Click += new System.EventHandler(this.tsbAlterarSenha_Click);
             // 
+            // tsbMalaDireta
+            // 
+            this.tsbMalaDireta.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbMalaDireta.Image = global::Formularios.Properties.Resources._1444871677_Email;
+            this.tsbMalaDireta.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbMalaDireta.Name = "tsbMalaDireta";
+            this.tsbMalaDireta.Size = new System.Drawing.Size(36, 36);
+            this.tsbMalaDireta.Text = "tsbMalaDireta";
+            this.tsbMalaDireta.ToolTipText = "Enviar mala direta";
+            this.tsbMalaDireta.Click += new System.EventHandler(this.tsbMalaDireta_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
@@ -283,5 +306,7 @@
         private System.Windows.Forms.ToolStripButton tsbGerarArquivo;
         private System.Windows.Forms.ToolStripButton tsbAlterarSenha;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem enviarMalaDiretaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton tsbMalaDireta;
     }
 }

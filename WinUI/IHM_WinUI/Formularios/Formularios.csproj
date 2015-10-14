@@ -82,6 +82,12 @@
     <Compile Include="frmGerarArquivo.Designer.cs">
       <DependentUpon>frmGerarArquivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMalaDireta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMalaDireta.Designer.cs">
+      <DependentUpon>frmMalaDireta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGerarArquivo.resx">
       <DependentUpon>frmGerarArquivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMalaDireta.resx">
+      <DependentUpon>frmMalaDireta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
@@ -163,6 +172,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1444261255_suppliers.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1444869963_mac-user-trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1444871677_Email.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

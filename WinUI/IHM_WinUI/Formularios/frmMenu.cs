@@ -140,5 +140,21 @@ namespace Formularios
         {
             MostraMudaSenha();
         }
+
+        private void enviarMalaDiretaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MostraMalaDireta();
+        }
+
+        private void MostraMalaDireta()
+        {
+            frmMalaDireta f = new frmMalaDireta();
+            f.ShowDialog();
+        }
+
+        private void tsbMalaDireta_Click(object sender, EventArgs e)
+        {
+            MostraMalaDireta();
+        }
     }
 }
