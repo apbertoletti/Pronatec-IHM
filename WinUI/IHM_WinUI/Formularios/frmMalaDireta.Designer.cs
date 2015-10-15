@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
+            this.lblLixeira = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,14 +50,19 @@
             this.lstDisponiveis.Name = "lstDisponiveis";
             this.lstDisponiveis.Size = new System.Drawing.Size(204, 147);
             this.lstDisponiveis.TabIndex = 0;
+            this.lstDisponiveis.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lstDisponiveis_MouseDown);
             // 
             // lstSelecionados
             // 
+            this.lstSelecionados.AllowDrop = true;
             this.lstSelecionados.FormattingEnabled = true;
             this.lstSelecionados.Location = new System.Drawing.Point(268, 94);
             this.lstSelecionados.Name = "lstSelecionados";
             this.lstSelecionados.Size = new System.Drawing.Size(204, 147);
             this.lstSelecionados.TabIndex = 1;
+            this.lstSelecionados.DragDrop += new System.Windows.Forms.DragEventHandler(this.lstSelecionados_DragDrop);
+            this.lstSelecionados.DragEnter += new System.Windows.Forms.DragEventHandler(this.lstSelecionados_DragEnter);
+            this.lstSelecionados.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lstSelecionados_MouseDown);
             // 
             // label1
             // 
@@ -78,7 +84,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(268, 270);
+            this.btnEnviar.Location = new System.Drawing.Point(268, 375);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(99, 53);
             this.btnEnviar.TabIndex = 5;
@@ -88,7 +94,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(373, 270);
+            this.btnCancelar.Location = new System.Drawing.Point(373, 375);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(99, 53);
             this.btnCancelar.TabIndex = 6;
@@ -134,11 +140,23 @@
             this.btnRemover.UseVisualStyleBackColor = true;
             this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
+            // lblLixeira
+            // 
+            this.lblLixeira.AllowDrop = true;
+            this.lblLixeira.Image = global::Formularios.Properties.Resources._1444869963_mac_user_trash;
+            this.lblLixeira.Location = new System.Drawing.Point(373, 264);
+            this.lblLixeira.Name = "lblLixeira";
+            this.lblLixeira.Size = new System.Drawing.Size(99, 76);
+            this.lblLixeira.TabIndex = 1;
+            this.lblLixeira.DragDrop += new System.Windows.Forms.DragEventHandler(this.lblLixeira_DragDrop);
+            this.lblLixeira.DragEnter += new System.Windows.Forms.DragEventHandler(this.lblLixeira_DragEnter);
+            // 
             // frmMalaDireta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 345);
+            this.ClientSize = new System.Drawing.Size(492, 440);
+            this.Controls.Add(this.lblLixeira);
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.panel1);
@@ -169,5 +187,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.Label lblLixeira;
     }
 }

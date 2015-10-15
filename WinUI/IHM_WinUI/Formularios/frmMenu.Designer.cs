@@ -77,38 +77,41 @@
             this.fornecedorToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            this.cadastrosToolStripMenuItem.Text = "&Cadastros";
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444259796_free_17;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(248, 38);
+            this.clientesToolStripMenuItem.Text = "Cli&entes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444260332_Label;
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.produtosToolStripMenuItem.Text = "Produtos";
+            this.produtosToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(248, 38);
+            this.produtosToolStripMenuItem.Text = "&Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // fornecedoresToolStripMenuItem
             // 
             this.fornecedoresToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444261182_category;
             this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.fornecedoresToolStripMenuItem.Text = "Categorias de produto";
+            this.fornecedoresToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(248, 38);
+            this.fornecedoresToolStripMenuItem.Text = "Cate&gorias de produto";
             this.fornecedoresToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
             // fornecedorToolStripMenuItem
             // 
             this.fornecedorToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444261255_suppliers;
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.fornecedorToolStripMenuItem.Text = "Fornecedor";
+            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(208, 38);
+            this.fornecedorToolStripMenuItem.Text = "&Fornecedor";
             this.fornecedorToolStripMenuItem.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
             // 
             // utilitariosToolStripMenuItem
@@ -119,30 +122,31 @@
             this.enviarMalaDiretaToolStripMenuItem});
             this.utilitariosToolStripMenuItem.Name = "utilitariosToolStripMenuItem";
             this.utilitariosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.utilitariosToolStripMenuItem.Text = "Utilitarios";
+            this.utilitariosToolStripMenuItem.Text = "&Utilitarios";
             // 
             // gerarArquivoToolStripMenuItem
             // 
             this.gerarArquivoToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444262800_folder;
             this.gerarArquivoToolStripMenuItem.Name = "gerarArquivoToolStripMenuItem";
-            this.gerarArquivoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.gerarArquivoToolStripMenuItem.Text = "Gerar arquivo";
+            this.gerarArquivoToolStripMenuItem.Size = new System.Drawing.Size(213, 38);
+            this.gerarArquivoToolStripMenuItem.Text = "&Gerar arquivo";
             this.gerarArquivoToolStripMenuItem.Click += new System.EventHandler(this.gerarArquivoToolStripMenuItem_Click);
             // 
             // alterarSenhaDeAcessoToolStripMenuItem
             // 
             this.alterarSenhaDeAcessoToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444262714_unlock;
             this.alterarSenhaDeAcessoToolStripMenuItem.Name = "alterarSenhaDeAcessoToolStripMenuItem";
-            this.alterarSenhaDeAcessoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.alterarSenhaDeAcessoToolStripMenuItem.Text = "Alterar senha de acesso";
+            this.alterarSenhaDeAcessoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.alterarSenhaDeAcessoToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
+            this.alterarSenhaDeAcessoToolStripMenuItem.Text = "&Alterar senha de acesso";
             this.alterarSenhaDeAcessoToolStripMenuItem.Click += new System.EventHandler(this.alterarSenhaDeAcessoToolStripMenuItem_Click);
             // 
             // enviarMalaDiretaToolStripMenuItem
             // 
             this.enviarMalaDiretaToolStripMenuItem.Image = global::Formularios.Properties.Resources._1444871677_Email;
             this.enviarMalaDiretaToolStripMenuItem.Name = "enviarMalaDiretaToolStripMenuItem";
-            this.enviarMalaDiretaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.enviarMalaDiretaToolStripMenuItem.Text = "Enviar mala direta";
+            this.enviarMalaDiretaToolStripMenuItem.Size = new System.Drawing.Size(213, 38);
+            this.enviarMalaDiretaToolStripMenuItem.Text = "&Enviar mala direta";
             this.enviarMalaDiretaToolStripMenuItem.Click += new System.EventHandler(this.enviarMalaDiretaToolStripMenuItem_Click);
             // 
             // button1

@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace Formularios
 {
+    //AULA 11: Todos os códigos implementados neste Formulário são 
+    //para exemplificar o usuario dos eventos de Drag and Drop (Arrastar e Soltar)
     public partial class frmMalaDireta : Form
     {
         public frmMalaDireta()
@@ -57,13 +59,19 @@ namespace Formularios
             lstDisponiveis.Items.Add("Teneci Fernandes");
             lstDisponiveis.Items.Add("Camila Santos do Amaral");
             lstDisponiveis.Items.Add("Maria Soares");
+            lstDisponiveis.Items.Add("Fred Flinston");
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
+            AdicionaClienteSelecionado();
+        }
+
+        private void AdicionaClienteSelecionado()
+        {
             //Captura o indice do elemento marcado no ListBox dos clientes disponíveis
             int indiceClienteMarcado = lstDisponiveis.SelectedIndex;
-            
+
             //Verifica se algum item está marcado na lista dos clientes disponíveis
             if (indiceClienteMarcado != -1)
             {
@@ -86,6 +94,56 @@ namespace Formularios
                 //Adiconar o cliente selecionado marcado na lista dos clientes disponíveis
                 lstDisponiveis.Items.Add(lstSelecionados.Items[indiceClienteMarcado]);
 
+                //Remove o cliente marcado da lista dos clientes selecionados
+                lstSelecionados.Items.RemoveAt(indiceClienteMarcado);
+            }
+        }
+
+        private void lstDisponiveis_MouseDown(object sender, MouseEventArgs e)
+        {
+            int indiceClienteMarcado = lstDisponiveis.IndexFromPoint(e.X, e.Y);
+
+            if (indiceClienteMarcado >= 0 && indiceClienteMarcado < lstDisponiveis.Items.Count)
+                lstDisponiveis.DoDragDrop(lstDisponiveis.Items[indiceClienteMarcado], DragDropEffects.Copy);
+        }
+
+        private void lstSelecionados_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void lstSelecionados_DragDrop(object sender, DragEventArgs e)
+        {
+            AdicionaClienteSelecionado();
+        }
+
+        private void lstSelecionados_MouseDown(object sender, MouseEventArgs e)
+        {
+            int indiceClienteMarcado = lstSelecionados.IndexFromPoint(e.X, e.Y);
+
+            if (indiceClienteMarcado >= 0 && indiceClienteMarcado < lstSelecionados.Items.Count)
+                lstSelecionados.DoDragDrop(lstSelecionados.Items[indiceClienteMarcado], DragDropEffects.Move);
+        }
+
+        private void lblLixeira_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+                e.Effect = DragDropEffects.Move;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void lblLixeira_DragDrop(object sender, DragEventArgs e)
+        {
+            //Captura o indice do elemento marcado no ListBox dos clientes selecionados
+            int indiceClienteMarcado = lstSelecionados.SelectedIndex;
+
+            //Verifica se algum item está marcado na lista dos clientes selecionados
+            if (indiceClienteMarcado != -1)
+            {
                 //Remove o cliente marcado da lista dos clientes selecionados
                 lstSelecionados.Items.RemoveAt(indiceClienteMarcado);
             }
