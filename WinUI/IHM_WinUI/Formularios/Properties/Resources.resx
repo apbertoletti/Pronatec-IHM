@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="1444871677_Email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1444871677_Email.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1444259796_free-17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1444259796_free-17.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,8 +133,8 @@
   <data name="1444261255_suppliers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1444261255_suppliers.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1444869963_mac-user-trash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1444869963_mac-user-trash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgLixeiraCheia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgLixeiraCheia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1444262714_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1444262714_unlock.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,7 +142,7 @@
   <data name="1444260332_Label" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1444260332_Label.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1444871677_Email" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1444871677_Email.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imgLixeiraVazia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgLixeiraVazia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

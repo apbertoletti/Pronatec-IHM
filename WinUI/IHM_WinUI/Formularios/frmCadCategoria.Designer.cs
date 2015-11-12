@@ -31,17 +31,13 @@
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Size = new System.Drawing.Size(411, 224);
-            // 
             // frmCadCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 318);
             this.Name = "frmCadCategoria";
-            this.Text = "frmCadCategoria";
+            this.Text = "Cadastro de Categorias";
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

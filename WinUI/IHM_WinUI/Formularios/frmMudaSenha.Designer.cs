@@ -100,7 +100,7 @@
             this.Controls.Add(this.txtSenhaAtual);
             this.Controls.Add(this.label1);
             this.Name = "frmMudaSenha";
-            this.Text = "frmMudaSenha";
+            this.Text = "Muda senha";
             this.ResumeLayout(false);
             this.PerformLayout();
 

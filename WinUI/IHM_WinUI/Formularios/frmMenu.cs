@@ -15,6 +15,8 @@ namespace Formularios
         public frmMenu()
         {
             InitializeComponent();
+            //AULA 12: Ajuste no formulário de menu para já iniciar sempre maximizado
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -27,7 +29,9 @@ namespace Formularios
         private void MostraFormCliente()
         {
             frmCadastroCliente fCliente = new frmCadastroCliente();
-            fCliente.ShowDialog();
+            //AULA 12: Chamada do form para se adequar ao padrão MDI
+            fCliente.MdiParent = this;
+            fCliente.Show();
         }
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,7 +44,9 @@ namespace Formularios
         private void MostraFormProduto()
         {
             frmCadastroProduto fProduto = new frmCadastroProduto();
-            fProduto.ShowDialog();
+            //AULA 12: Chamada do form para se adequar ao padrão MDI
+            fProduto.MdiParent = this;
+            fProduto.Show();
         }
 
         private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,24 +58,10 @@ namespace Formularios
         //Esta é uma boa prática para se fazer reaproveitamento de código
         private void MostraFormCategoria()
         {
-            frmCadCategoria fFornecedor = new frmCadCategoria();
-            fFornecedor.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int a = 0;
-            int b = 10;
-            int c;
-
-            //AULA 7: Tratamento de erros
-            if (a != 0)
-                c = b/a;
-            else
-            {
-                MessageBox.Show("Não é possivel dividir por zero", 
-                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            frmCadCategoria fCategoria = new frmCadCategoria();
+            //AULA 12: Chamada do form para se adequar ao padrão MDI
+            fCategoria.MdiParent = this;
+            fCategoria.Show();
         }
 
         private void gerarArquivoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -82,6 +74,7 @@ namespace Formularios
         private void MostraGeraArquivo()
         {
             frmGerarArquivo f = new frmGerarArquivo();
+            f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
         }
 
@@ -95,6 +88,7 @@ namespace Formularios
         private void MostraMudaSenha()
         {
             frmMudaSenha f = new frmMudaSenha();
+            f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
         }
 
@@ -123,7 +117,9 @@ namespace Formularios
         private void MostraFornecedor()
         {
             frmCadFornecedor f = new frmCadFornecedor();
-            f.ShowDialog();
+            //AULA 12: Chamada do form para se adequar ao padrão MDI
+            f.MdiParent = this;
+            f.Show();
         }
 
         private void tsbFornecedor_Click(object sender, EventArgs e)
@@ -149,12 +145,47 @@ namespace Formularios
         private void MostraMalaDireta()
         {
             frmMalaDireta f = new frmMalaDireta();
+            f.StartPosition = FormStartPosition.CenterScreen;
             f.ShowDialog();
         }
 
         private void tsbMalaDireta_Click(object sender, EventArgs e)
         {
             MostraMalaDireta();
+        }
+
+        private void simulandoUmTratamentoDeErroQuePossaSerEvitadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int a = 0;
+            int b = 10;
+            int c;
+
+            //AULA 7: Tratamento de erros
+            if (a != 0)
+                c = b/a;
+            else
+            {
+                MessageBox.Show("Não é possivel dividir por zero", 
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cascataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //AULA 12: Organizar janelas abertas em cascata
+            this.LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //AULA 12: Organizar janelas abertas na vertifical
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //AULA 12: Organizar janelas abertas na horizontal
+            this.LayoutMdi(MdiLayout.TileHorizontal);
         }
     }
 }

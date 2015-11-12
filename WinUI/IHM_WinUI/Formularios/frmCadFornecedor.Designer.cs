@@ -28,9 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.tabControl1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // frmCadFornecedor
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "frmCadFornecedor";
+            this.ClientSize = new System.Drawing.Size(443, 318);
+            this.Name = "frmCadFornecedor";
+            this.Text = "Cadastro de Fornecedores";
+            this.tabControl1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

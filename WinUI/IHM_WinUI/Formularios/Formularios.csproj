@@ -114,6 +114,9 @@
     <EmbeddedResource Include="frmCadCategoria.resx">
       <DependentUpon>frmCadCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadFornecedor.resx">
+      <DependentUpon>frmCadFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGerarArquivo.resx">
       <DependentUpon>frmGerarArquivo.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,10 +177,13 @@
     <None Include="Resources\1444261255_suppliers.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1444869963_mac-user-trash.png" />
+    <None Include="Resources\1444871677_Email.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1444871677_Email.ico" />
+    <None Include="Resources\imgLixeiraCheia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLixeiraVazia.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

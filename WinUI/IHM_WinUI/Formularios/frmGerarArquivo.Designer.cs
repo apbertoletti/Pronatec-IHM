@@ -68,7 +68,7 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
             this.Name = "frmGerarArquivo";
-            this.Text = "frmGerarArquivo";
+            this.Text = "Geração de arquivo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

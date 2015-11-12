@@ -16,3 +16,4 @@ D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\Wi
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.exe
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.pdb
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmMalaDireta.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmCadFornecedor.resources

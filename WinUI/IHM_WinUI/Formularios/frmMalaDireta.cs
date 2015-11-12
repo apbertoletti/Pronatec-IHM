@@ -138,6 +138,13 @@ namespace Formularios
 
         private void lblLixeira_DragDrop(object sender, DragEventArgs e)
         {
+            ExcluirItemSelecionado();
+        }
+
+        //AULA 12: Isolado um método a parte contendo a exclusão do item individual,
+        //a fim de podermos reaproveitar a chamada do mesmo dentro do menu de contexto
+        private void ExcluirItemSelecionado()
+        {
             //Captura o indice do elemento marcado no ListBox dos clientes selecionados
             int indiceClienteMarcado = lstSelecionados.SelectedIndex;
 
@@ -146,7 +153,34 @@ namespace Formularios
             {
                 //Remove o cliente marcado da lista dos clientes selecionados
                 lstSelecionados.Items.RemoveAt(indiceClienteMarcado);
+
+                //AULA 12: Volta a exibir a imagem da lixeira vazia
+                lblLixeira.Image = Properties.Resources.imgLixeiraCheia;
             }
+        }
+
+        private void limparLixeiraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //AULA 12: Simula um tempo fictício para limpar a lixeira
+            Cursor.Current = Cursors.WaitCursor;
+            Thread.Sleep(1500);
+
+            //AULA 12: Volta a exibir a imagem da lixeira vazia
+            lblLixeira.Image = Properties.Resources.imgLixeiraVazia;
+        }
+
+        private void excluirSomenteOSelecionadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExcluirItemSelecionado();
+        }
+
+        private void excluirTodosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //AULA 12: Exclui todos os itens do listBox de uma vez só
+            lstSelecionados.Items.Clear();
+
+            //AULA 12: Volta a exibir a imagem da lixeira vazia
+            lblLixeira.Image = Properties.Resources.imgLixeiraCheia;
         }
     }
 }

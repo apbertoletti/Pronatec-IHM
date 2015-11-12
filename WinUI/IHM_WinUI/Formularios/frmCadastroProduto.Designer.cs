@@ -49,7 +49,6 @@
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.txtDescricao);
-            this.tabPage2.Size = new System.Drawing.Size(411, 224);
             // 
             // txtDescricao
             // 
@@ -111,7 +110,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 326);
             this.Name = "frmCadastroProduto";
-            this.Text = "frmCadastroProduto";
+            this.Text = "Cadastro de Produtos";
             this.Load += new System.EventHandler(this.frmCadastroProduto_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

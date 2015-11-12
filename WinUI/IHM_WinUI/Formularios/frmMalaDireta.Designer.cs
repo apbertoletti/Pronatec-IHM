@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMalaDireta));
             this.lstDisponiveis = new System.Windows.Forms.ListBox();
             this.lstSelecionados = new System.Windows.Forms.ListBox();
@@ -39,8 +40,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.limparLixeiraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblLixeira = new System.Windows.Forms.Label();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.excluirSomenteOSelecionadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirTodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstDisponiveis
@@ -55,6 +63,7 @@
             // lstSelecionados
             // 
             this.lstSelecionados.AllowDrop = true;
+            this.lstSelecionados.ContextMenuStrip = this.contextMenuStrip2;
             this.lstSelecionados.FormattingEnabled = true;
             this.lstSelecionados.Location = new System.Drawing.Point(268, 94);
             this.lstSelecionados.Name = "lstSelecionados";
@@ -84,7 +93,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(268, 375);
+            this.btnEnviar.Location = new System.Drawing.Point(276, 417);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(99, 53);
             this.btnEnviar.TabIndex = 5;
@@ -94,7 +103,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(373, 375);
+            this.btnCancelar.Location = new System.Drawing.Point(381, 417);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(99, 53);
             this.btnCancelar.TabIndex = 6;
@@ -140,22 +149,59 @@
             this.btnRemover.UseVisualStyleBackColor = true;
             this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.limparLixeiraToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(145, 26);
+            // 
+            // limparLixeiraToolStripMenuItem
+            // 
+            this.limparLixeiraToolStripMenuItem.Name = "limparLixeiraToolStripMenuItem";
+            this.limparLixeiraToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.limparLixeiraToolStripMenuItem.Text = "Limpar lixeira";
+            this.limparLixeiraToolStripMenuItem.Click += new System.EventHandler(this.limparLixeiraToolStripMenuItem_Click);
+            // 
             // lblLixeira
             // 
             this.lblLixeira.AllowDrop = true;
-            this.lblLixeira.Image = global::Formularios.Properties.Resources._1444869963_mac_user_trash;
-            this.lblLixeira.Location = new System.Drawing.Point(373, 264);
+            this.lblLixeira.ContextMenuStrip = this.contextMenuStrip1;
+            this.lblLixeira.Image = global::Formularios.Properties.Resources.imgLixeiraVazia;
+            this.lblLixeira.Location = new System.Drawing.Point(356, 262);
             this.lblLixeira.Name = "lblLixeira";
-            this.lblLixeira.Size = new System.Drawing.Size(99, 76);
+            this.lblLixeira.Size = new System.Drawing.Size(124, 133);
             this.lblLixeira.TabIndex = 1;
             this.lblLixeira.DragDrop += new System.Windows.Forms.DragEventHandler(this.lblLixeira_DragDrop);
             this.lblLixeira.DragEnter += new System.Windows.Forms.DragEventHandler(this.lblLixeira_DragEnter);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.excluirSomenteOSelecionadoToolStripMenuItem,
+            this.excluirTodosToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(234, 48);
+            // 
+            // excluirSomenteOSelecionadoToolStripMenuItem
+            // 
+            this.excluirSomenteOSelecionadoToolStripMenuItem.Name = "excluirSomenteOSelecionadoToolStripMenuItem";
+            this.excluirSomenteOSelecionadoToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.excluirSomenteOSelecionadoToolStripMenuItem.Text = "Excluir somente o selecionado";
+            this.excluirSomenteOSelecionadoToolStripMenuItem.Click += new System.EventHandler(this.excluirSomenteOSelecionadoToolStripMenuItem_Click);
+            // 
+            // excluirTodosToolStripMenuItem
+            // 
+            this.excluirTodosToolStripMenuItem.Name = "excluirTodosToolStripMenuItem";
+            this.excluirTodosToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.excluirTodosToolStripMenuItem.Text = "Excluir todos";
+            this.excluirTodosToolStripMenuItem.Click += new System.EventHandler(this.excluirTodosToolStripMenuItem_Click);
             // 
             // frmMalaDireta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 440);
+            this.ClientSize = new System.Drawing.Size(492, 482);
             this.Controls.Add(this.lblLixeira);
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.btnAdicionar);
@@ -170,6 +216,8 @@
             this.Text = "Envio de Mala Direta para Clientes";
             this.Load += new System.EventHandler(this.frmMalaDireta_Load);
             this.panel1.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +236,10 @@
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnRemover;
         private System.Windows.Forms.Label lblLixeira;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem limparLixeiraToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem excluirSomenteOSelecionadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem excluirTodosToolStripMenuItem;
     }
 }
