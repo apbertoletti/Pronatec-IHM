@@ -1,6 +1,3 @@
-D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Formularios.exe.config
-D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Formularios.exe
-D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Formularios.pdb
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\MeusControles.dll
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\MeusControles.pdb
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.csprojResolveAssemblyReference.cache
@@ -13,7 +10,10 @@ D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\Wi
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmMudaSenha.resources
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.Properties.Resources.resources
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.csproj.GenerateResource.Cache
-D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.exe
-D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.pdb
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmMalaDireta.resources
 D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Formularios.frmCadFornecedor.resources
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Loja.exe.config
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Loja.exe
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\bin\Debug\Loja.pdb
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Loja.exe
+D:\Dados\André\Documentos\Profissional\Unimep\Interface Homem-máquina\Demos\WinUI\IHM_WinUI\Formularios\obj\Debug\Loja.pdb

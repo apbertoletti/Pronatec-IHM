@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMudaSenha));
             this.label1 = new System.Windows.Forms.Label();
             this.txtSenhaAtual = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
@@ -99,6 +100,10 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtSenhaAtual);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMudaSenha";
             this.Text = "Muda senha";
             this.ResumeLayout(false);

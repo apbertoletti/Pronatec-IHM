@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMalaDireta));
             this.lstDisponiveis = new System.Windows.Forms.ListBox();
             this.lstSelecionados = new System.Windows.Forms.ListBox();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.excluirSomenteOSelecionadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirTodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
@@ -43,12 +46,9 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.limparLixeiraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblLixeira = new System.Windows.Forms.Label();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.excluirSomenteOSelecionadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.excluirTodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
-            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstDisponiveis
@@ -72,6 +72,28 @@
             this.lstSelecionados.DragDrop += new System.Windows.Forms.DragEventHandler(this.lstSelecionados_DragDrop);
             this.lstSelecionados.DragEnter += new System.Windows.Forms.DragEventHandler(this.lstSelecionados_DragEnter);
             this.lstSelecionados.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lstSelecionados_MouseDown);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.excluirSomenteOSelecionadoToolStripMenuItem,
+            this.excluirTodosToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(234, 48);
+            // 
+            // excluirSomenteOSelecionadoToolStripMenuItem
+            // 
+            this.excluirSomenteOSelecionadoToolStripMenuItem.Name = "excluirSomenteOSelecionadoToolStripMenuItem";
+            this.excluirSomenteOSelecionadoToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.excluirSomenteOSelecionadoToolStripMenuItem.Text = "Excluir somente o selecionado";
+            this.excluirSomenteOSelecionadoToolStripMenuItem.Click += new System.EventHandler(this.excluirSomenteOSelecionadoToolStripMenuItem_Click);
+            // 
+            // excluirTodosToolStripMenuItem
+            // 
+            this.excluirTodosToolStripMenuItem.Name = "excluirTodosToolStripMenuItem";
+            this.excluirTodosToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.excluirTodosToolStripMenuItem.Text = "Excluir todos";
+            this.excluirTodosToolStripMenuItem.Click += new System.EventHandler(this.excluirTodosToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -175,28 +197,6 @@
             this.lblLixeira.DragDrop += new System.Windows.Forms.DragEventHandler(this.lblLixeira_DragDrop);
             this.lblLixeira.DragEnter += new System.Windows.Forms.DragEventHandler(this.lblLixeira_DragEnter);
             // 
-            // contextMenuStrip2
-            // 
-            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.excluirSomenteOSelecionadoToolStripMenuItem,
-            this.excluirTodosToolStripMenuItem});
-            this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(234, 48);
-            // 
-            // excluirSomenteOSelecionadoToolStripMenuItem
-            // 
-            this.excluirSomenteOSelecionadoToolStripMenuItem.Name = "excluirSomenteOSelecionadoToolStripMenuItem";
-            this.excluirSomenteOSelecionadoToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
-            this.excluirSomenteOSelecionadoToolStripMenuItem.Text = "Excluir somente o selecionado";
-            this.excluirSomenteOSelecionadoToolStripMenuItem.Click += new System.EventHandler(this.excluirSomenteOSelecionadoToolStripMenuItem_Click);
-            // 
-            // excluirTodosToolStripMenuItem
-            // 
-            this.excluirTodosToolStripMenuItem.Name = "excluirTodosToolStripMenuItem";
-            this.excluirTodosToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
-            this.excluirTodosToolStripMenuItem.Text = "Excluir todos";
-            this.excluirTodosToolStripMenuItem.Click += new System.EventHandler(this.excluirTodosToolStripMenuItem_Click);
-            // 
             // frmMalaDireta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,12 +212,16 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstSelecionados);
             this.Controls.Add(this.lstDisponiveis);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMalaDireta";
             this.Text = "Envio de Mala Direta para Clientes";
             this.Load += new System.EventHandler(this.frmMalaDireta_Load);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
