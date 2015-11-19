@@ -224,7 +224,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 402);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(34, 52);
+            this.MinimumSize = new System.Drawing.Size(631, 441);
             this.Name = "frmCadastroCliente";
             this.Text = "Cadastro de Clientes";
             this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
